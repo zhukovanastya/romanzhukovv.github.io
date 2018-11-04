@@ -13,18 +13,18 @@ body{
   margin-right: 100px;
 }
 .main-content, .main-img{
-  position: relative;
+  /* position: relative; */
 }
 .main-img{
   opacity: 0.6;
 }
 .name-project{
    /* padding-top: 100px; */
-   margin-top: -530px;
+   /* margin-top: -530px; */
    font-weight: bold;
 }
 .main p{
-   margin-top: 80px;
+   /* margin-top: 80px; */
    font-size: 30px;
 }
 .marathon-button a{
@@ -41,11 +41,13 @@ body{
 }
 .main{
    text-align: center;
-   height: 600px;
+   height: auto;
+   padding-bottom: 50px;
+   position: relative;
 }
 
 .marathon-button{
-   margin-top: 70px;
+   /* margin-top: 70px; */
 }
 .marathon-button a:hover{
    background-color: rgb(75, 74, 74);
@@ -55,7 +57,10 @@ body{
 
 .free{
    background-color: rgb(235, 235, 235);
-   height: 500px;
+   height: auto;
+   position: relative;
+   /* padding-bottom: 20px;
+   padding-top: 20px; */
 }
 .text_1{
    padding-top: 60px;
@@ -87,7 +92,10 @@ body{
 
 .podborka{
    background-color: #fff;
-   height: 500px;
+   height: auto;
+   position: relative;
+   /* padding-bottom: 20px;
+   padding-top: 20px; */
 }
 .text_2{
    padding-top: 60px;
@@ -120,9 +128,10 @@ body{
 }
 .programms{
    background-color: rgb(235, 235, 235);
-   height: 770px;
+   height: auto;
    text-align: center;
    padding-top: 50px;
+   padding-bottom: 50px;
 }
 .programms img{
    box-shadow: 2px 5px 10px 2px rgba(38, 39, 39, 0.6);
@@ -179,14 +188,15 @@ body{
 }
 .kak_nachatb{
    background-color: #fff;
-   height: 500px;
-   /* text-align: center; */
-   padding-top: 70px;
+   height: auto;
+   text-align: center;
+   padding-top: 50px;
+   padding-bottom: 20px;
    display: flex;
    flex-direction: row;
    justify-content: center;
-   padding-left: 50px;
-   padding-right: 50px;
+   padding-left: 30px;
+   padding-right: 30px;
 }
 .kak_nachatb p{
    margin-top: 50px;
@@ -200,10 +210,8 @@ body{
 }
 .obo_mne{
    background-color: rgb(235, 235, 235);
-   height: 500px;
-}
-.img_10{
-   margin-top: 65px;
+   height: auto;
+   padding-top: 50px;
 }
 .img_10 img{
    box-shadow: 2px 5px 10px 2px rgba(38, 39, 39, 0.6);
@@ -213,14 +221,10 @@ body{
    transform: scale(1.05);
 }
 
-.text_obo_mne h1{
-   margin-top: 65px;
-}
 .text_obo_mne p{
    font-size: 27px;
    line-height: 85px;
 }
-
 .otzivi-slider{
    background-color: white;
    height: 600px;
@@ -256,46 +260,42 @@ footer{
    opacity: 1;
    transform: scale(1);
 }
-
-@media (max-width: 992px){
+@media (min-width: 992px){
+  .free, .podborka{
+    padding-bottom: 50px;
+  }
+  .kak_nachatb img{
+    width: 80%;
+  }
+}
+@media (max-width: 991px){
 	.navbar-brand{
     margin-left: 0px;
   }
+  .free{
+    text-align: center;
+    padding-bottom: 50px;
+  }
+  .podborka, .obo_mne{
+    text-align: center;
+  }
+  .pitanie_tren, .text_obo_mne{
+    margin-top: 50px;
+  }
+  .kak_nachatb{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ }
 }
 @media (max-width: 509px){
-	.name-project{
-    margin-top: -480px;
-  }
-  .main p{
-    font-size: 25px;
-  }
-  .main-img img{
-    /* flex-flow: wrap; */
+  .main-img img, .free img, .podborka img{
     width: 100%;
   }
-  .marathon-button{
-    margin-top: 20px;
-  }
- .marathon-button a{
-  font-size: 20px;
-  border-radius: 15px;
-  padding: 10px 35px;
+}
+@media (max-width: 333px){
+  .programms img, .kak_nachatb img, .obo_mne img{
+    width: 100%;
   }
 }
-@media (max-width: 361px){
-	.name-project{
-    margin-top: -410px;
-  }
-  .main p{
-    font-size: 20px;
-    margin-bottom: 0px;
-  }
-  .marathon-button{
-    margin-top: 10px;
-  }
-  .marathon-button a{
-    font-size: 20px;
-    border-radius: 10px;
-    padding: 5px 30px;
-    }
-} 

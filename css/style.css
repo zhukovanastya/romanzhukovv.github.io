@@ -264,12 +264,38 @@ footer{
 }
 @media (max-width: 509px){
 	.name-project{
-    margin-top: -550px;
- }
+    margin-top: -480px;
+  }
   .main p{
     font-size: 25px;
   }
-  .main-img{
+  .main-img img{
+    /* flex-flow: wrap; */
     width: 100%;
   }
+  .marathon-button{
+    margin-top: 20px;
+  }
+ .marathon-button a{
+  font-size: 20px;
+  border-radius: 15px;
+  padding: 10px 35px;
+  }
 }
+@media (max-width: 361px){
+	.name-project{
+    margin-top: -410px;
+  }
+  .main p{
+    font-size: 20px;
+    margin-bottom: 0px;
+  }
+  .marathon-button{
+    margin-top: 10px;
+  }
+  .marathon-button a{
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 5px 30px;
+    }
+} 

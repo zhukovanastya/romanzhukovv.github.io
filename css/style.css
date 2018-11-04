@@ -102,7 +102,7 @@ body{
 .img_1, .img_2{
    margin-top: 20px;
 }
-.podborka-button a{
+input[value="Приобрести за 169 руб."]{
    text-decoration: none;
    font-size: 25px;
    font-weight: bold;
@@ -111,12 +111,14 @@ body{
    border-radius: 15px;
    padding: 15px 45px;
    transition: 0.4s;
+   cursor: pointer;
+   border: none;
    /* box-shadow: 2px 5px 10px 2px rgba(38, 39, 39, 0.644); */
 }
 .podborka-button{
    margin-top: 50px;
 }
-.podborka-button a:hover{
+input[value="Приобрести за 169 руб."]:hover{
    background-color: rgb(75, 74, 74);
    color: white;
    /* box-shadow: none; */
@@ -218,7 +220,7 @@ body{
 
 .text_obo_mne p{
    font-size: 27px;
-   line-height: 85px;
+   line-height: 60px;
 }
 .otzivi-slider{
    background-color: white;
@@ -288,7 +290,7 @@ footer{
   .main-img img, .free img, .podborka img{
     width: 100%;
   }
-  .marathon-button a,.podborka-button a, .pitanie-button a, .pitanie_tren-button a, .check-list-button a{
+  .marathon-button a,input[value="Приобрести за 169 руб."], .pitanie-button a, .pitanie_tren-button a, .check-list-button a{
     font-size: 20px;
     border-radius: 10px;
     padding: 10px 15px;
@@ -298,14 +300,14 @@ footer{
   .programms img, .kak_nachatb img, .obo_mne img{
     width: 100%;
   }
-  .marathon-button a,.podborka-button a, .pitanie-button a, .pitanie_tren-button a, .check-list-button a{
+  .marathon-button a,input[value="Приобрести за 169 руб."], .pitanie-button a, .pitanie_tren-button a, .check-list-button a{
     font-size: 17px;
     border-radius: 10px;
     padding: 10px 10px;
   }
 }
 @media (max-width: 350px){
-  .marathon-button a,.podborka-button a, .pitanie-button a, .pitanie_tren-button a, .check-list-button a{
+  .marathon-button a,input[value="Приобрести за 169 руб."], .pitanie-button a, .pitanie_tren-button a, .check-list-button a{
     font-size: 17px;
     border-radius: 10px;
     padding: 10px 10px;
@@ -331,4 +333,15 @@ footer{
   .main p{
     font-size: 20px;
   }
+}
+
+
+.podb_completed{
+  height: auto;
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 113px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
 }

@@ -71,7 +71,7 @@
              </p>
           </div>
           <div class="check-list-button">
-            <a href="#">Получить бесплатный чек-лист</a>
+            <a href="checklist.pdf">Получить бесплатный чек-лист</a>
           </div>
         </div>
 
@@ -93,7 +93,26 @@
              </p>
           </div>
           <div class="podborka-button">
-            <a href="#">Приобрести за 169 руб.</a>
+            <!-- <a href="#">Приобрести за 169 руб.</a> -->
+
+            <form method="POST" action="https://money.yandex.ru/quickpay/confirm.xml">
+              <input type="hidden" name="receiver" value="410017936494992">
+              <input type="hidden" name="formcomment" value="Покупка подборки с чек-листом, трекером и воркбуком.">
+              <input type="hidden" name="short-dest" value="Подборка за 169 р.">
+              <input type="hidden" name="quickpay-form" value="donate">
+              <input type="hidden" name="targets" value="Подборка за 169 р.">
+              <input type="hidden" name="sum" value="5.00" data-type="number">
+              <input type="hidden" name="comment" value="Покупка подборки с чек-листом, трекером и воркбуком.">
+              <input type="hidden" name="need-fio" value="false">
+              <input type="hidden" name="need-email" value="true"> 
+              <input type="hidden" name="need-phone" value="false">
+              <input type="hidden" name="need-address" value="false">
+              <input type="hidden" name="paymentType" value="PC">
+              <input type="hidden" name="paymentType" value="AC">
+              <input type="submit" value="Приобрести за 169 руб.">
+              <input type="hidden" name="successURL" value="https://romanzhukovv.github.io/podborka_completed.html">
+          </form>
+
           </div>
         </div>
 
@@ -201,7 +220,8 @@
               <p>Дипломированный тренер<br>
                 Специалист по питанию<br>
                 Мне доверились более 500 девушек<br> 
-                Занимаюсь фитнесом более 4 лет<br>            
+                Занимаюсь фитнесом более 4 лет<br>
+                Мой подход - адекватность во всем: без диет и выматывающих тренировок            
               </p>
               <!-- <div class="pitanie_tren-button">
                 <a href="#">Купить за 790 руб.</a>

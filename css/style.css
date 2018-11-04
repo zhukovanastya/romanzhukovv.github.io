@@ -12,19 +12,12 @@ body{
   font-size: 25px;
   margin-right: 100px;
 }
-.main-content, .main-img{
-  /* position: relative; */
-}
-.main-img{
-  opacity: 0.6;
-}
 .name-project{
-   /* padding-top: 100px; */
-   /* margin-top: -530px; */
+   padding-top: 50px;
    font-weight: bold;
 }
 .main p{
-   /* margin-top: 80px; */
+   margin-top: 80px;
    font-size: 30px;
 }
 .marathon-button a{
@@ -41,13 +34,15 @@ body{
 }
 .main{
    text-align: center;
-   height: auto;
+   height: 600px;
    padding-bottom: 50px;
    position: relative;
+   background: url(main1.png) no-repeat;
+   background-position: center;
 }
 
 .marathon-button{
-   /* margin-top: 70px; */
+   margin-top: 120px;
 }
 .marathon-button a:hover{
    background-color: rgb(75, 74, 74);
@@ -314,5 +309,26 @@ footer{
     font-size: 17px;
     border-radius: 10px;
     padding: 10px 10px;
+  }
+  .main p{
+    font-size: 20px;
+  }
+}
+@media (max-width: 561px){
+  .main p{
+    font-size: 25px;
+  }
+}
+@media (max-width: 456px){
+  .marathon-button{
+    margin-top: 40px;
+  }
+}
+@media (max-width: 315px){
+  .marathon-button{
+    margin-top: 50px;
+  }
+  .main p{
+    font-size: 20px;
   }
 }
